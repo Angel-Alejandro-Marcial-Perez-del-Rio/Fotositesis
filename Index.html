@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebQuest: La Fotosíntesis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 WebQuest: La Fotosíntesis 🌞</h1>
+  </header>
+  <main>
+    <!-- INTRODUCCIÓN -->
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>La fotosíntesis es el proceso por el cual las plantas crean su alimento usando la luz del sol, el agua y el dióxido de carbono. ¡Es como su receta mágica para vivir!</p>
+      <img src="assets/plant.webp" alt="Ilustración de planta" />
+    </section>
+
+    <!-- TAREA -->
+    <section id="tarea">
+      <h2>Tarea</h2>
+      <p>¡Vamos a jugar! Responde el cuestionario interactivo o arrastra las partes de la planta al lugar correcto. ¿Listo para el reto?</p>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso">
+      <h2>Proceso</h2>
+      <ol>
+        <li>Lee la introducción con atención.</li>
+        <li>Juega con el cuestionario o el juego de arrastrar.</li>
+        <li>Dibuja una planta y marca sus partes (hojas, raíz, tallo, flor).</li>
+        <li>Muestra tu dibujo a tus compañeros o familiares.</li>
+      </ol>
+    </section>
+
+    <!-- ACTIVIDAD INTERACTIVA -->
+    <section id="actividad">
+      <h2>Actividad Interactiva</h2>
+      <div class="quiz">
+        <p>¿Qué necesitan las plantas para hacer fotosíntesis?</p>
+        <button onclick="verificarRespuesta(this, true)">Luz del sol, agua y dióxido de carbono</button>
+        <button onclick="verificarRespuesta(this, false)">Luz de luna y aire caliente</button>
+        <button onclick="verificarRespuesta(this, false)">Chocolate y dulces</button>
+      </div>
+
+      <div class="drag-game">
+        <p><strong>Arrastra cada parte de la planta a su función correcta:</strong></p>
+        <div class="drag-container">
+          <ul id="partes" class="drag-list">
+            <li draggable="true">Raíz</li>
+            <li draggable="true">Hoja</li>
+            <li draggable="true">Tallo</li>
+          </ul>
+          <ul id="funciones" class="drop-list">
+            <li data-respuesta="Raíz">Absorbe agua y nutrientes</li>
+            <li data-respuesta="Hoja">Hace la fotosíntesis</li>
+            <li data-respuesta="Tallo">Transporta el agua</li>
+          </ul>
+        </div>
+        <button onclick="verificarDrag()">Verificar</button>
+        <p id="resultado-drag"></p>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos">
+      <h2>Recursos</h2>
+      <ul>
+        <li><a href="https://youtu.be/p7lxdjDqtq4" target="_blank">Video: ¿Qué es la fotosíntesis? (YouTube)</a></li>
+        <li><a href="https://es.khanacademy.org/science/biology" target="_blank">Khan Academy - Biología básica</a></li>
+      </ul>
+    </section>
+
+    <!-- EVALUACIÓN -->
+    <section id="evaluacion">
+      <h2>Evaluación</h2>
+      <ul>
+        <li>😊 ¡Sí! Entendí qué es la fotosíntesis.</li>
+        <li>🤔 Más o menos, pero aprendí cosas nuevas.</li>
+        <li>😕 Necesito repasar un poco más.</li>
+      </ul>
+    </section>
+
+    <!-- CONCLUSIÓN -->
+    <section id="conclusion">
+      <h2>Conclusión</h2>
+      <p>¡Felicidades! 🌿 Ahora sabes cómo las plantas hacen su comida. ¡Eres un experto en fotosíntesis!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💚 para niños curiosos. Proyecto educativo libre.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* style.css */
+
+/* General */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #e7fce8;
+  margin: 0;
+  padding: 0;
+  color: #2e4e1e;
+}
+
+header, footer {
+  background-color: #a8e6cf;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  padding: 1em;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #388e3c;
+}
+
+/* Quiz */
+.quiz button {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #dcedc8;
+  border: 2px solid #81c784;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quiz button.correct {
+  background: #c8e6c9;
+  border-color: #4caf50;
+}
+
+.quiz button.incorrect {
+  background: #ffcdd2;
+  border-color: #e57373;
+}
+
+/* Drag & Drop */
+.drag-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.drag-list, .drop-list {
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  background: #f0f4c3;
+  border: 2px dashed #aed581;
+  padding: 1em;
+}
+
+.drag-list li, .drop-list li {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background: #fff;
+  cursor: move;
+  border: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .drag-container {
+    flex-direction: column;
+  }
+}
